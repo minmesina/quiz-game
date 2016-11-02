@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="js.js"></script>
+	<script src="myscript.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="load()">
+
+	<h1 id="set1">QUIZ #1</h1>
+	<h1 id="set2">QUIZ #2</h1>
+	<h1 id="set3">RESULT</h1>
+	<div id="que1">
+		<h3>Abbreviation of HTML.</h3>
+		<input type="text" id="guess1">
+		<h4 id="remark1"></h4>
+		
+	</div>
+
+	<div id="que2">
+		<h3>Abbreviation of CSS.</h3>
+		<input type="text" id="guess2">
+		<h4 id="remark2"></h4>
+	</div>
+
+	<div id="que3">
+		<h3>A server-side scripting language designed for web development <br>
+		but also used as a general-purpose programming language.</h3>
+		<input type="text" id="guess3">
+		<h4 id="remark3"></h4>
+	</div>
+	
+	<div id="que4">
+		<h3>Part of the family of XML markup languages. It mirrors or extends <br>
+		versions of the widely used Hypertext Markup Language (HTML), <br>
+		the language in which Web pages are formulated.</h3>
+		<input type="text" id="guess4">
+		<h4 id="remark4"></h4>
+	</div>
+	
+	<div id="que5">
+		<h3>Web document that is suitable for the World Wide Web and the web browser.</h3>
+		<input type="text" id="guess5">
+		<h4 id="remark5"></h4>
+	</div>
+	
+	<div id="que6">
+		<h3>Former CEO of Apple Inc.</h3>
+		<input type="text" id="guess6">
+		<h4 id="remark6"></h4>
+	</div>
+	
+	<div id="que7">
+		<h3>Founder of Microsoft.</h3>
+		<input type="text" id="guess7">
+		<h4 id="remark7"></h4>
+	</div>
+	
+	<div id="que8">
+		<h3>Inventor of World-Wide-Web.</h3>
+		<input type="text" id="guess8">
+		<h4 id="remark8"></h4>
+	</div>
+	
+	<div id="que9">
+		<h3>Developers of TCP/IP.</h3>
+		<input type="text" id="guess9">
+		<h4 id="remark9"></h4><br>
+		<input type="text" id="guess10">
+		<h4 id="remark10"></h4>
+	</div>
+	
+	<input type="button" onclick="checkquiz1()" value="Submit" id="submit1">
+	<input type="button" onclick="checkquiz2()" value="Submit" id="submit2">
+	<input type="button" onclick="nextquiz()" value="Next" id="next">
+	<input type="button" onclick="compute()" value="Next" id="next1">
+	<form name="f1">
+	<p id="q1">Quiz #1:</p> <input type="text" name="textbox1" id="t1" size="4" readonly><br><br>
+	<p id="q2">Quiz #2:</p>  <input type="text" name="textbox2" id="t2" size="4" readonly><br><br>
+	<p id="tot">Total:</p> <input type="text" name="textbox3" id="t3" size="4" readonly><br><br>
+	<p id="ave">Average:</p>  <input type="text" name="textbox4" id="t4" size="4" readonly><br><br>
+	
+	<p id="n1">Name:</p> <input type="text" name="textbox5" id="name">
+	</form>
+	<input type="button" onclick="result()" value="Done" id="result">
+</body>
+</html>
